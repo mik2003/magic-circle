@@ -156,8 +156,8 @@ context = bpy.context
 
 e = Epicycle()
 n = 2
-radius = [1,2] #n * [1]
-speed = [3, 7]  # n * [1]
+radius = [1, 2]  # n * [1]
+speed = [2, 7]  # n * [1]
 angle_i = n * [0]
 e.add_circles(radius/ np.sum(radius), speed, angle_i) # / np.sum(radius)
 e.time = np.linspace(0, 2 * np.pi, int(60 * np.max(speed)))
